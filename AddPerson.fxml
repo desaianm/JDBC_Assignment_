@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="443.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment.AddPerson">
+   <children>
+      <Button layoutX="68.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Name" />
+      <Button layoutX="68.0" layoutY="145.0" mnemonicParsing="false" style="-fx-background-color: blue; -fx-text-fill: white;" text="Address" />
+      <Separator layoutX="6.0" layoutY="60.0" prefHeight="0.0" prefWidth="430.0" style="-fx-background-color: white;" />
+      <Label layoutX="141.0" layoutY="14.0" prefHeight="32.0" prefWidth="137.0" style="-fx-text-fill: white;" text="    Add Person">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PersonName" layoutX="204.0" layoutY="100.0" />
+      <TextField fx:id="PersonAddress" layoutX="204.0" layoutY="145.0" />
+      <Button layoutX="68.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Phone" />
+      <TextField fx:id="Phone" layoutX="204.0" layoutY="200.0" />
+      <Button fx:id="submit" layoutX="180.0" layoutY="357.0" mnemonicParsing="false" onAction="#Submit_Button" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: lightgreen; -fx-text-fill: brown;" text="Submit" />
+      <TextArea fx:id="result_area" disable="true" layoutX="122.0" layoutY="255.0" opacity="0.93" prefHeight="86.0" prefWidth="200.0">
+         <effect>
+            <ColorInput paint="#bb0c0c" />
+         </effect>
+      </TextArea>
+      <Label fx:id="result" layoutX="72.0" layoutY="254.0" prefHeight="58.0" prefWidth="274.0" style="-fx-text-fill: white;" text="           Result Area" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
